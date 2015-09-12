@@ -24,10 +24,17 @@ header div {
 }
 
 .title {
+	color: #00CC99;
+	text-shadow: 2px 2px 1px black;
 	width: 45%;
 	height: 100%;
 	text-align: right;
 	padding-right: 10px;
+}
+
+i {
+	color: black;
+	text-shadow: none;
 }
 
 .cart {
@@ -52,6 +59,10 @@ header div {
 
 .input, .reset {
 	height: 3em;
+}
+
+.listTitle {
+	color: black;
 }
 
 .lists {
