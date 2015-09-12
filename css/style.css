@@ -1,0 +1,64 @@
+body {
+	background-color: #949494;
+	font-size: 1.5em;
+}
+
+header {
+	height: 5em;
+	width: 75%;
+	margin: 0 auto;
+	padding: 0;
+	display: table;
+}
+
+header div {
+	display: inline-block;
+}
+
+.title, .cart {
+	display: table-cell;
+	vertical-align: middle;
+	text-align: center;
+}
+
+.title {
+	width: 65%;
+	height: 100%;
+}
+
+.cart {
+	width: 30%;
+	height: 100%;
+}
+
+.userChoice {
+	width: 80%;
+	height: 3em;
+	margin: 0 auto;
+	text-align: center;
+}
+
+.input, .reset, .current, .removed {
+	display: inline-block;
+	width: 40%;
+	margin: 0 2.5%;
+}
+
+.input, .reset {
+	height: 3em;
+}
+
+.lists {
+	width: 80%;
+	margin: 0 auto;
+	text-align: center;
+}
+
+.current, .removed {
+	min-height: 20em;
+}
+
+
+* {
+	border: solid 1px red;
+}
