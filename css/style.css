@@ -4,6 +4,7 @@
 body {
 	background-image: url("../images/background.png");
 	font-size: 1.5em;
+	color: #ffffff;
 }
 
 header {
@@ -20,17 +21,19 @@ header div {
 .title, .cart {
 	display: table-cell;
 	vertical-align: middle;
-	text-align: center;
 }
 
 .title {
-	width: 65%;
+	width: 45%;
 	height: 100%;
+	text-align: right;
+	padding-right: 10px;
 }
 
 .cart {
 	width: 30%;
 	height: 100%;
+	text-align: left;
 }
 
 .userChoice {
@@ -59,22 +62,19 @@ header div {
 
 .lists ul {
 	margin-left: 4em;
-	padding: 0;
+	padding: 5px;
 	text-align: left;
 	list-style-type: none;
 }
 
 .current, .removed {
-	min-height: 10em;
+	background-color: rgba(106, 48, 106, .5);
+	min-height: 13em;
 }
 
 .checked {
 	text-decoration: line-through;
-}
-
-
-* {
-	border: solid 1px red;
+	color: #CCCCCC;
 }
 
 @media only screen and (max-width: 500px) {
@@ -88,10 +88,14 @@ header div {
 
     .lists ul {
     	margin: 0;
-    	padding: 0;
     }
 
     .current, .removed {
     	width: 43%;
+    }
+
+    .title {
+    	text-align: center;
+    	width: 65%;
     }
 }
