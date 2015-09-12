@@ -1,4 +1,6 @@
 
+
+
 body {
 	background-image: url("../images/background.png");
 	font-size: 1.5em;
@@ -40,8 +42,9 @@ header div {
 
 .input, .reset, .current, .removed {
 	display: inline-block;
+	vertical-align: top;
 	width: 45%;
-	margin: 0 1%;
+	margin: 0;
 }
 
 .input, .reset {
@@ -54,11 +57,41 @@ header div {
 	text-align: center;
 }
 
+.lists ul {
+	margin-left: 4em;
+	padding: 0;
+	text-align: left;
+	list-style-type: none;
+}
+
 .current, .removed {
 	min-height: 10em;
+}
+
+.checked {
+	text-decoration: line-through;
 }
 
 
 * {
 	border: solid 1px red;
+}
+
+@media only screen and (max-width: 500px) {
+    body {
+    	font-size: 1em;
+    }
+
+    .lists {
+    	width: 90%;
+    }
+
+    .lists ul {
+    	margin: 0;
+    	padding: 0;
+    }
+
+    .current, .removed {
+    	width: 43%;
+    }
 }
