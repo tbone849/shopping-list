@@ -5,6 +5,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">  
 	<title>Shopping List</title>
 	<link rel="stylesheet" href="css/font-awesome.min.css">
+	<link href='https://fonts.googleapis.com/css?family=Catamaran:400,900|Rancho|Roboto+Condensed' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" type="text/css" href="css/normalize.css">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
@@ -13,7 +14,7 @@
 <body>
 	<header>
 		<div class="title">
-			<h2>Shopping </br><i class="fa fa-check fa-lg"></i>ist<h2>
+			<h2>&#36;hopping </br><i class="fa fa-check fa-lg"></i>ist<h2>
 		</div>
 		<div class="cart">
 			<i class="fa fa-shopping-cart fa-4x"></i>
@@ -21,12 +22,8 @@
 	</header>
 	<section class="userChoice">
 		<div class="input">
-			Enter new item: <input type="text" id="newitem">
+			Enter new item: <input type="text" id="newitem" size="12">
 			<button type="submit" id="addItem">Add</button>
-			
-		</div>
-		<div class="reset">
-			reset
 		</div>
 	</section>
 	<section class="lists">
@@ -46,5 +43,8 @@
 			</ul>
 		</div>
 	</section>
+	<footer>
+		<button type="submit" id="reset">Reset List</button>
+	</footer>
 </body>
 </html>

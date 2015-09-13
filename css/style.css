@@ -1,9 +1,8 @@
 
-
-
 body {
 	background-image: url("../images/background.png");
 	font-size: 1.5em;
+	font-family: 'Roboto Condensed', sans-serif;
 	color: #ffffff;
 }
 
@@ -24,6 +23,7 @@ header div {
 }
 
 .title {
+	font-family: 'Catamaran', sans-serif;
 	color: #00CC99;
 	text-shadow: 2px 2px 1px black;
 	width: 40%;
@@ -50,37 +50,43 @@ i {
 	text-align: center;
 }
 
-.input, .reset, .current, .removed {
+.current, .removed {
 	display: inline-block;
 	vertical-align: top;
 	width: 45%;
 	margin: 0;
 }
 
-.input, .reset {
+.input {
 	height: 3em;
+	width: 100%;
 }
 
 .input input {
 	color: black;
 }
 
-#addItem {
+button {
 	color: black;
 }
 
 .listTitle {
+	font-family: 'Catamaran', sans-serif;
+	font-weight: bold;
 	color: black;
+	background-color: #ffffff;
 }
 
 .lists {
+	font-family: 'Rancho', cursive;
+	font-size: 1.25em;
 	width: 80%;
 	margin: 0 auto;
 	text-align: center;
 }
 
 .lists ul {
-	margin-left: 4em;
+	margin-left: 4.5em;
 	padding: 5px;
 	text-align: left;
 	list-style-type: none;
@@ -89,11 +95,19 @@ i {
 .current, .removed {
 	background-color: rgba(106, 48, 106, .5);
 	min-height: 13em;
+	-webkit-border-radius: 10px;
+	border-radius: 10px;
 }
 
 .checked {
 	text-decoration: line-through;
 	color: #CCCCCC;
+}
+
+footer {
+	text-align: center;
+	width: 40%;
+	margin: 1em auto;
 }
 
 @media only screen and (max-width: 500px) {
@@ -102,11 +116,12 @@ i {
     }
 
     .lists {
+    	font-size: 1em;
     	width: 90%;
     }
 
     .lists ul {
-    	margin: 0;
+    	margin-left: 1em;
     }
 
     .current, .removed {
