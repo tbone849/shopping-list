@@ -6,11 +6,23 @@ $( document ).ready(function() {
     	var item = $("#newitem").val();
     	if(item != ''){
     		var newItemHTML = "<li><input type='checkbox'>" + item + "</li>";
-            $("input:text").val("");
-    		$(".current-list").prepend(newItemHTML);
+            $("input:text").val(""); // empty textbox
+    		$(".current-list").prepend(newItemHTML); // add new item
     		$(".current-list > li:first-child > input:checkbox").on("click", clicked);
             // this last step is needed because the new checkbox is not recognized the first .on click function
     	}
+    });
+
+    // Attach enter keypress to add item button
+    $(document).keypress(function(e){
+        if(e.keyCode == '13'){
+            $('#addItem').click();   
+        }
+
+    });
+
+    $("#reset").click(function(){
+        $("li").remove();
     });
 });
 
