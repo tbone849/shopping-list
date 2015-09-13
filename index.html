@@ -13,7 +13,7 @@
 <body>
 	<header>
 		<div class="title">
-			<h2>Shopping <i class="fa fa-check fa-lg"></i>ist<h2>
+			<h2>Shopping </br><i class="fa fa-check fa-lg"></i>ist<h2>
 		</div>
 		<div class="cart">
 			<i class="fa fa-shopping-cart fa-4x"></i>
@@ -21,7 +21,9 @@
 	</header>
 	<section class="userChoice">
 		<div class="input">
-			input
+			Enter new item: <input type="text" id="newitem">
+			<button type="submit" id="addItem">Add</button>
+			
 		</div>
 		<div class="reset">
 			reset
@@ -29,18 +31,18 @@
 	</section>
 	<section class="lists">
 		<div class="current">
-			<p class="listTitle">Current List<p>
+			<p class="listTitle">Current List</p>
 			<ul class="current-list">
-				<li><input value="Detergent" type="checkbox">Detergent</li>
-				<li><input value="Cheese" type="checkbox">Cheese</li>
-				<li><input value="Shampoo" type="checkbox">Shampoo</li>
+				<li><input type="checkbox">Detergent</li>
+				<li><input type="checkbox">Cheese</li>
+				<li><input type="checkbox">Shampoo</li>
 			</ul>
 		</div>
 		<div class="removed">
 			<p class="listTitle">Removed Items</p>
 			<ul class="removed-list">
-				<li class="checked"><input value="Pizza Sauce" type="checkbox" checked>Pizza Sauce</li>
-				<li class="checked"><input value="Soda" type="checkbox" checked>Soda</li>
+				<li class="checked"><input type="checkbox" checked>Pizza Sauce</li>
+				<li class="checked"><input type="checkbox" checked>Soda</li>
 			</ul>
 		</div>
 	</section>
