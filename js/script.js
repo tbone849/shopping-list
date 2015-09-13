@@ -4,6 +4,7 @@ $( document ).ready(function() {
     // Add new item to list
     $("#addItem").click(function(){
     	var item = $("#newitem").val();
+        $('form').reset();
     	if(item != ''){
     		var newItemHTML = "<li><input type='checkbox'>" + item + "</li>";
     		$(".current-list").prepend(newItemHTML);
