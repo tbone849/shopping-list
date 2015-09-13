@@ -4,9 +4,9 @@ $( document ).ready(function() {
     // Add new item to list
     $("#addItem").click(function(){
     	var item = $("#newitem").val();
-        $('form').reset();
     	if(item != ''){
     		var newItemHTML = "<li><input type='checkbox'>" + item + "</li>";
+            $("input:text").val("");
     		$(".current-list").prepend(newItemHTML);
     		$(".current-list > li:first-child > input:checkbox").on("click", clicked);
             // this last step is needed because the new checkbox is not recognized the first .on click function
